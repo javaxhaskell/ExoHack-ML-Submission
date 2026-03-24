@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+*.hdf5
+*.csv
+outputs/
+data/
+.env
+.env.*
+credentials*
+secret*
