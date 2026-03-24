@@ -1,12 +1,16 @@
+.DS_Store
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+*.ipynb
 
 *.hdf5
 *.csv
 outputs/
 data/
+Hackathon_training/
 .env
 .env.*
 credentials*
 secret*
+final_summary.md
