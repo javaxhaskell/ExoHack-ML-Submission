@@ -6,7 +6,13 @@ __pycache__/
 
 *.hdf5
 *.csv
-outputs/
+outputs/*
+!outputs/reports/
+outputs/reports/*
+!outputs/reports/*.md
+!outputs/reports/assets/
+outputs/reports/assets/*
+!outputs/reports/assets/*.png
 data/
 Hackathon_training/
 .env

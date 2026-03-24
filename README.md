@@ -135,29 +135,29 @@ That produced the winning target allocation:
 
 ### Core Code
 
-- `src/`: data loading, features, metrics, validation, calibration, and model definitions
-- `scripts/`: reproducible phase runners and a sanitized submission helper
-- `docs/`: research-facing narrative of the project
-- `img/`: lightweight presentation figures and schematics
+- `src/`: data loading, features, metrics, calibration, and models
+- `scripts/`: phase runners and submission helpers
+- `outputs/reports/`: audit, EDA, tournament, and calibration reports
 
 ### Recommended Reading Order
 
-1. `README.md`
-2. `docs/research_report.md`
-3. `src/data_loading.py`
-4. `src/metrics.py`
-5. `src/validation.py`
-6. `src/calibration.py`
-7. `scripts/run_phase2.py`
-8. `scripts/run_phase3.py`
+1. `outputs/reports/phase1_audit.md`
+2. `outputs/reports/phase1_eda.md`
+3. `outputs/reports/phase2_model_tournament.md`
+4. `outputs/reports/phase2_ablation.md`
+5. `outputs/reports/phase3_fasttrack_summary.md`
+6. `docs/research_report.md`
 
-## Selected Figures
+## Figures
 
-These presentation figures are included directly in the repository:
+The repository includes phase-1 figures that remain useful for understanding the modelling story:
 
-- `img/score_concept.svg`
-- `img/hackathon_workflow.png`
-- `img/03_ensemble_schematic.png`
+- `outputs/reports/assets/phase1_target_distributions.png`
+- `outputs/reports/assets/phase1_target_correlation.png`
+- `outputs/reports/assets/phase1_metadata_target_relationships.png`
+- `outputs/reports/assets/phase1_spectrum_noise_summary.png`
+- `outputs/reports/assets/phase1_snr_diagnostics.png`
+- `outputs/reports/assets/phase1_regime_scatter.png`
 
 ## Framing
 
