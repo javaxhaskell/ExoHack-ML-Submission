@@ -1,8 +1,13 @@
 # ExoHack Atmospheric Retrieval Research Log
 
-## Best Verified Leaderboard Score
+ExoHack is a research-driven machine learning competition centred on exoplanet atmospheric retrieval. The task is to infer six planetary parameters from spectral data while also producing calibrated uncertainty under a probabilistic leaderboard metric. This research log records the modelling decisions, validation insights, and score-driven experiments behind that effort, and serves both as a reproducible account of the competition pipeline and as a broader study of how hidden probabilistic objectives shape high-performance scientific modelling.
+
+
+## (3/100) Best Verified Leaderboard Score
 
 **0.8707883387590796**
+
+
 
 This repository documents a competition effort on probabilistic exoplanet atmospheric retrieval: predicting six planetary parameters together with calibrated uncertainty, under a CRPS-style leaderboard metric. The work was treated not as notebook decoration, but as an iterative research program in which every modelling change had to justify itself against the score actually used by the challenge.
 
@@ -45,7 +50,7 @@ This configuration achieved the best verified score:
 
 ## Why This Is Interesting
 
-The most important scientific lesson from this work is not that “MLPs beat trees.” It is subtler.
+Most notable findings:
 
 - Local robust validation initially favored an ExtraTrees abundance family.
 - The hidden leaderboard repeatedly rejected sigma-only surgeries on that tree family.
@@ -162,12 +167,3 @@ This project should be read less as a polished “final pipeline” and more as 
 - mistrust elegant monoliths until they win
 - treat uncertainty as part of the prediction, not an accessory
 - let the leaderboard update your beliefs when it contradicts your preferred local story
-
-## Note On GitHub
-
-The working directory was not linked to an existing Git repository or GitHub remote at the time this documentation was written. The material here is therefore **GitHub-ready**, but an actual push requires either:
-
-- an existing remote to attach, or
-- a new GitHub repository URL and credentials/authenticated CLI access.
-
-The research presentation itself is now prepared for that handoff.
