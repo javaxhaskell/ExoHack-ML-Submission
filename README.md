@@ -3,7 +3,7 @@
 ExoHack is a research-driven machine learning competition centred on exoplanet atmospheric retrieval. The task is to infer six planetary parameters from spectral data while also producing calibrated uncertainty under a probabilistic leaderboard metric. This research log records the modelling decisions, validation insights, and score-driven experiments behind that effort, and serves both as a reproducible account of the competition pipeline and as a broader study of how hidden probabilistic objectives shape high-performance scientific modelling.
 
 
-## (3/100) Best Verified Leaderboard Score
+## (3/100) Verified Leaderboard Score
 
 **0.8707883387590796**
 
