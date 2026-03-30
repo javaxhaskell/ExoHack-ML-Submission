@@ -11,18 +11,6 @@ ExoHack is a research-driven machine learning competition centred on exoplanet a
 
 This repository documents a competition effort on probabilistic exoplanet atmospheric retrieval: predicting six planetary parameters together with calibrated uncertainty, under a CRPS-style leaderboard metric. The work was treated not as notebook decoration, but as an iterative research program in which every modelling change had to justify itself against the score actually used by the challenge.
 
-
-## Research Questions
-
-This repository is organized around a set of explicit questions:
-
-1. What does the official score actually reward?
-2. Which parts of the problem are metadata-dominated and which are spectrum-dominated?
-3. Should temperature and molecular abundances be modelled together or separately?
-4. Is the best hidden-test inductive bias tree-based, neural, shared, or target-specialised?
-5. How much of the final score comes from mean prediction and how much from uncertainty engineering?
-6. What does the leaderboard teach us when it disagrees with our hardest local validation split?
-
 ## Headline Result
 
 The best verified leaderboard system had the following structure:
