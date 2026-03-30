@@ -94,11 +94,7 @@ Phase 3 shifted focus from means to probabilistic performance:
 - disagreement-scaled sigma
 - blended sigma systems
 
-> good mean models can still underperform if their uncertainty is misaligned with the actual scoring rule.
 
-### Leaderboard Pivot
-
-The robust local favourite was not the leaderboard favourite.
 The hidden test behaved more like the IID/random-fold regime than the edge-stress regime.
 
 That changed the research program:
@@ -109,11 +105,11 @@ That changed the research program:
 
 ### Final Best System
 
-The final best verified submission emerged from this revised hypothesis:
+The verified submission emerged from this revised hypothesis:
 
 > use the neural family, but let target structure break the multioutput compromise.
 
-That produced the winning target allocation:
+That produced the target allocation:
 
 - `log_H2O`: shared MLP
 - `log_CO2`: single-target MLP
@@ -140,7 +136,7 @@ That produced the winning target allocation:
 
 ## Figures
 
-The repository includes phase-1 figures that remain useful for understanding the modelling story:
+The repository includes phase-1 figures that remain useful for understanding the modelling progression:
 
 - `outputs/reports/assets/phase1_target_distributions.png`
 - `outputs/reports/assets/phase1_target_correlation.png`
