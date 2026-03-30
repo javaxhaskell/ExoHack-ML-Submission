@@ -11,11 +11,6 @@ ExoHack is a research-driven machine learning competition centred on exoplanet a
 
 This repository documents a competition effort on probabilistic exoplanet atmospheric retrieval: predicting six planetary parameters together with calibrated uncertainty, under a CRPS-style leaderboard metric. The work was treated not as notebook decoration, but as an iterative research program in which every modelling change had to justify itself against the score actually used by the challenge.
 
-## Abstract
-
-This project studies a deceptively simple question: *what kind of inductive bias survives contact with a hidden probabilistic leaderboard?* The local evidence initially suggested that robust, target-specialised tree ensembles were the safest route, especially under regime-shifted validation. Yet the leaderboard ultimately revealed a different structure. The strongest hidden-test performance emerged from a neural, target-specialised abundance system that was initially discounted as too brittle under a hard edge split.
-
-The final research conclusion is therefore methodological as much as predictive: **when the competition objective is probabilistic and the hidden test distribution is closer to IID than to an adversarial shift split, model family choice and uncertainty alignment can dominate conventional robustness intuitions**.
 
 ## Research Questions
 
@@ -57,7 +52,6 @@ Most notable findings:
 - A deliberately risky switch to a shared MLP abundance backbone produced a large score jump.
 - A further move to a target-wise neural hybrid produced the strongest verified score.
 
-In other words, the leaderboard exposed a *distributional mismatch between our harshest local split and the actual hidden-test regime*. That mismatch became the central object of study.
 
 ## Experimental Arc
 
@@ -100,13 +94,9 @@ Phase 3 shifted focus from means to probabilistic performance:
 - disagreement-scaled sigma
 - blended sigma systems
 
-This phase reinforced an essential competition truth:
-
 > good mean models can still underperform if their uncertainty is misaligned with the actual scoring rule.
 
 ### Leaderboard Pivot
-
-The leaderboard then forced a conceptual pivot.
 
 The robust local favourite was not the leaderboard favourite.
 The hidden test behaved more like the IID/random-fold regime than the edge-stress regime.
