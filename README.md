@@ -159,23 +159,5 @@ The repository includes phase-1 figures that remain useful for understanding the
 - `outputs/reports/assets/phase1_snr_diagnostics.png`
 - `outputs/reports/assets/phase1_regime_scatter.png`
 
-## Framing
 
-This project should be read less as a polished “final pipeline” and more as a compact case study in empirical scientific reasoning under leaderboard pressure:
 
-- audit the metric before optimising it
-- mistrust elegant monoliths until they win
-- treat uncertainty as part of the prediction, not an accessory
-- let the leaderboard update your beliefs when it contradicts your preferred local story
-
-## Repository Scope
-
-This GitHub-facing version intentionally excludes:
-
-- competition datasets
-- generated submission files
-- large experiment outputs
-- cached artifacts
-- secrets and team credentials
-
-The goal is a clean research/code repository rather than a data dump.
